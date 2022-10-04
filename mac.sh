@@ -27,7 +27,10 @@ packages=(
 	)
 
 applications=(
+	flux
+	iterm2
 	raspberry-pi-imager
+	rectangle
 	sublime-merge
 	sublime-text
 	)
