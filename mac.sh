@@ -2,8 +2,11 @@
 
 # Install Homebrew
 if test ! $(which brew); then
-    echo "Installing Hombrew"
+    echo "Installing Homebrew"
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/adriaan/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/adriaan/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 # else
 #     echo "Updating Homebrew"
 #     brew update
@@ -24,7 +27,10 @@ packages=(
 	)
 
 applications=(
+	flux
+	iterm2
 	raspberry-pi-imager
+	rectangle
 	sublime-merge
 	sublime-text
 	)
