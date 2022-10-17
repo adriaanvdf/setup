@@ -29,12 +29,21 @@ packages=(
 	)
 
 applications=(
+	1password
+	brave-browser
 	flux
 	iterm2
+	miro
+	notion
+	postman
 	raspberry-pi-imager
 	rectangle
+	slack
+	spotify
 	sublime-merge
 	sublime-text
+	zoom
+	)
 	)
 
 software=(
