@@ -1,5 +1,8 @@
 #!/bin/bash -e -x
 
+echo "Installing xcode-stuff"
+xcode-select --install
+
 # Install Homebrew
 if test ! $(which brew); then
     echo "Installing Homebrew"
