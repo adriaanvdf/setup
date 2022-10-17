@@ -13,7 +13,9 @@ if test ! $(which brew); then
 # else
 #     echo "Updating Homebrew"
 #     brew update
-fi	
+fi
+
+brew tap homebrew/cask-drivers
 
 
 packages=(
@@ -44,37 +46,15 @@ applications=(
 	sublime-text
 	zoom
 	)
+
+drivers=(
 	)
 
 software=(
 	"${packages[@]}"
 	"${applications[@]}"
+	"${drivers[@]}"
 	)
-
-# # Install packages
-# for package in "${packages[@]}"; do
-# 	if test ! $(which $package); then
-# 	    echo "Installing $package"
-# 	    brew install $package
-# 	else
-# 	    echo "$package already installed"
-# 	#     echo "Updating $package"
-# 	#     brew update <>
-# 	fi
-# done
-
-# # Install packages
-# for app in "${applications[@]}"; do
-# 	if test ! $(which $app); then
-# 	    echo "Installing $app"
-# 	    brew install --cask $
-# 	    brew cask install --appdir="/Applications" $app
-
-# 	# else
-# 	#     echo "Updating $app"
-# 	#     brew update <>
-# 	fi
-# done
 
 # Install software
 for i in "${software[@]}"; do
