@@ -17,6 +17,7 @@ fi
 
 
 packages=(
+	gh
 	go
 	iperf3
 	kubectl
@@ -24,9 +25,7 @@ packages=(
 	minikube
 	nmap
 	pv
-	ssh
 	wget
-	xzcat
 	)
 
 applications=(
