@@ -71,5 +71,19 @@ done
 
 brew cleanup
 
-# Create symlink shortcuts
+## SSH
+echo "Generate SSH keys"
+if ls -al ~/.ssh &>/dev/null; then
+	echo "exists"
+else
+	ssh-keygen -t rsa
+fi
+
+## Create symlink shortcuts
+echo "Create symlink shortcuts"
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+
+## Git setup
+echo "Set up git config"
+git config --global user.name "adriaanvdf"
+git config --global user.email adriaan@vdfeltz.com
