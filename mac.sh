@@ -60,8 +60,8 @@ software=(
 for i in "${software[@]}"; do
 	if brew list $i &>/dev/null; then
 		echo "$i already installed"
-		# echo "Updating $i"
-		# brew update <>
+		echo "Updating $i"
+		brew upgrade $i
 	else
 		echo "Installing $i"
 	    brew install $i
