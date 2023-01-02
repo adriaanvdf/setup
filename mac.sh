@@ -34,9 +34,13 @@ applications=(
 	1password
 	brave-browser
 	flux
+	intellij-idea-ce
 	iterm2
+	microsoft-office
+	microsoft-teams
 	miro
 	notion
+	obsidian
 	postman
 	raspberry-pi-imager
 	rectangle
